@@ -11,5 +11,12 @@ routes.post('/save-draft',saveSendEmails)
 routes.post('/starred', toggleStarredEmail);
 routes.delete('/delete', deleteEmails);
 routes.post('/bin', moveEmailsToBin);
+routes.get('/',(req,res)=>{
+    console.log("hello");
+   res.send(
+    "hello"
+   )
+    
+})
 
 export default routes;
